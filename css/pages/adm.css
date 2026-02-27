@@ -1,0 +1,37 @@
+html.page-adm body,
+body.page-adm {
+  min-height: 100vh;
+}
+
+body.page-adm .app {
+  display: none;
+}
+
+body.page-adm .modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 20% 10%, rgba(35, 88, 180, 0.22), rgba(0, 0, 0, 0.55));
+}
+
+body.page-adm .modal {
+  width: min(1600px, calc(100% - 1.2rem));
+}
+
+.page-title-wrap {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 18px auto 0;
+  color: #f1f6ff;
+}
+
+.page-title-wrap h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+}
+
+.page-title-wrap p {
+  margin: 4px 0 0;
+  color: #d8e6ff;
+}

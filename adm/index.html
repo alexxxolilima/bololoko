@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Painel administrativo da Bololoko.">
+  <meta name="theme-color" content="#2a1207">
+  <base href="../">
+  <title>Bololoko | Painel ADM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:wght@400;600;700&family=Barlow+Condensed:wght@400;500;600;700&family=Bebas+Neue&family=Bungee&family=Exo+2:wght@400;600;700&family=Fjalla+One&family=Kanit:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600;700&family=Poppins:wght@400;600;700&family=Rajdhani:wght@500;600;700&family=Roboto+Condensed:wght@400;700&family=Rubik:wght@400;600;700&family=Saira+Condensed:wght@500;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/pages/adm.css">
+</head>
+<body>
+  <div class="page-title-wrap">
+    <h1>Painel Administrativo</h1>
+    <p>Gerencie categorias, produtos, estilo e destaques com praticidade.</p>
+  </div>
+
+  <div class="app">
+    <header class="topbar" role="banner">
+      <div class="brand">
+        <img id="brandLogo" class="brand-logo" src="./logo.png" alt="Bololoko">
+        <div><h1>BOLOLOKO</h1><p>Bolos de copo</p></div>
+      </div>
+      <form class="search" role="search" onsubmit="return false;">
+        <label for="searchInput" class="visually-hidden">Buscar sabor</label>
+        <input id="searchInput" type="search" placeholder="Buscar sabor...">
+      </form>
+      <nav id="categoryNav" class="category-nav" aria-label="Categorias"></nav>
+    </header>
+    <main id="menuMain" class="main-content" tabindex="-1">
+      <section class="highlights"><div class="section-head"><h2>Destaques do momento</h2><span class="highlights-time"></span></div><div id="highlightsTrack" class="highlights-track"></div></section>
+      <section><div id="menuList"></div></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="modalOverlay" class="modal-backdrop" aria-hidden="true">
+    <div id="modalContent" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  </div>
+
+  <script src="js/pages/adm.js"></script>
+  <script type="module" src="app.js"></script>
+  <script>
+    window.__admin_user = "admin";
+    window.__admin_hash = "705e1734dd0713210cba68ecfb7e2b4d9611ec09823254dbd4ea4c8bb32d43ad";
+  </script>
+</body>
+</html>

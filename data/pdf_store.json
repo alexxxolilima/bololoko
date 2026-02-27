@@ -1,0 +1,21 @@
+{
+  "current": {
+    "title": "BOLOLOKO",
+    "subtitle": "Cardápio de bolos de copo",
+    "orientation": "portrait",
+    "pageSize": "A4",
+    "align": "left",
+    "font": "Arial",
+    "colorText": "#2a1207",
+    "colorAccent": "#1f5eff",
+    "colorBg": "#ffffff",
+    "logoPath": "./logo.png",
+    "showLogo": true,
+    "showImages": true,
+    "layoutMode": "cards",
+    "density": "normal",
+    "showDesc": true,
+    "showPrice": true
+  },
+  "history": []
+}
